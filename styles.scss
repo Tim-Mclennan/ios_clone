@@ -10,6 +10,9 @@ These external properties are located within a seperate directory (scss-docs) an
 /* GOOGLE FONT */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
+* {
+    font-family: Poppins;
+}
 
 .iphone {
     margin: auto;
@@ -28,11 +31,12 @@ These external properties are located within a seperate directory (scss-docs) an
         border-radius: 30px;
 
         &--bg {
-            background: url("images/background.jpg");
+            background: url("images/background3.jpg");
             background-size: cover;
+            background-position: center;
         }
         &__icons {
-            margin: 40px 25px;
+            margin: 60px 25px;
             display: grid;
             grid-template-columns: repeat(4, auto);
             row-gap: 60px;
@@ -47,66 +51,163 @@ These external properties are located within a seperate directory (scss-docs) an
                 background: white;
                 border-radius: 15px;
                 cursor: pointer;
+                position: relative;
 
                 &:nth-child(1) {
                     background-image: url("images/Safari.JPG");
                     background-size: cover;
                     background-position: center;
+                    &::after {
+                        content: "Safari";
+                        color: white;
+                        bottom: -20px;
+                        left: 12px;
+                        position: absolute;
+                        font-size: 0.7rem;
+                    }
                 }
                 &:nth-child(2) {
                     background-image: url("images/camera.JPG");
                     background-size: cover;
                     background-position: center;
+                    &::after {
+                        content: "Camera";
+                        color: white;
+                        bottom: -20px;
+                        left: 4px;
+                        position: absolute;
+                        font-size: 0.7rem;
+                    }
                 }
                 &:nth-child(3) {
                     background-image: url("images/calendar.JPG");
                     background-size: cover;
                     background-position: center;
+                    &::after {
+                        content: "Calendar";
+                        color: white;
+                        bottom: -20px;
+                        left: 1px;
+                        position: absolute;
+                        font-size: 0.7rem;
+                    }
                 }
                 &:nth-child(4) {
-                    background-image: url("images/clock.JPG");
+                    background-image: url("images/clock.jpg");
                     background-size: cover;
                     background-position: center;
+                    &::after {
+                        content: "Clock";
+                        color: white;
+                        bottom: -20px;
+                        left: 12px;
+                        position: absolute;
+                        font-size: 0.7rem;
+                    }
                 }
                 &:nth-child(5) {
                     background-image: url("images/contacts.JPG");
                     background-size: cover;
                     background-position: center;
+                    &::after {
+                        content: "Contacts";
+                        color: white;
+                        bottom: -20px;
+                        left: 2px;
+                        position: absolute;
+                        font-size: 0.7rem;
+                    }
                 }
                 &:nth-child(6) {
                     background-image: url("images/discord.JPG");
                     background-size: cover;
                     background-position: center;
+                    &::after {
+                        content: "Discord";
+                        color: white;
+                        bottom: -20px;
+                        left: 8px;
+                        position: absolute;
+                        font-size: 0.7rem;
+                    }
                 }
                 &:nth-child(7) {
                     background-image: url("images/google.JPG");
                     background-size: cover;
                     background-position: center;
+                    &::after {
+                        content: "Google";
+                        color: white;
+                        bottom: -20px;
+                        left: 6px;
+                        position: absolute;
+                        font-size: 0.7rem;
+                    }
                 }
                 &:nth-child(8) {
                     background-image: url("images/instagram.JPG");
                     background-size: cover;
                     background-position: center;
+                    &::after {
+                        content: "Instagram";
+                        color: white;
+                        bottom: -20px;
+                        left: 0px;
+                        position: absolute;
+                        font-size: 0.7rem;
+                    }
                 }
                 &:nth-child(9) {
                     background-image: url("images/messenger.JPG");
                     background-size: cover;
                     background-position: center;
+                    &::after {
+                        content: "Messenger";
+                        color: white;
+                        bottom: -20px;
+                        left: -5px;
+                        position: absolute;
+                        font-size: 0.7rem;
+                    }
                 }
                 &:nth-child(10) {
                     background-image: url("images/notes.JPG");
                     background-size: cover;
                     background-position: center;
+                    &::after {
+                        content: "Notes";
+                        color: white;
+                        bottom: -20px;
+                        left: 10px;
+                        position: absolute;
+                        font-size: 0.7rem;
+                    }
                 }
                 &:nth-child(11) {
                     background-image: url("images/reminder.JPG");
                     background-size: cover;
                     background-position: center;
+                    &::after {
+                        content: "Reminders";
+                        color: white;
+                        bottom: -20px;
+                        left: -2px;
+                        position: absolute;
+                        font-size: 0.7rem;
+                    }
                 }
                 &:nth-child(12) {
                     background-image: url("images/slack.JPG");
                     background-size: cover;
                     background-position: center;
+                    &::after {
+                        content: "Slack";
+                        color: white;
+                        bottom: -20px;
+                        left: 14px;
+                        position: absolute;
+                        font-size: 0.7rem;
+                    }
                 }
             }
         }
@@ -114,14 +215,31 @@ These external properties are located within a seperate directory (scss-docs) an
         &--notch {
             position: absolute;
             top: 0;
-            left: 62px;
-            // margin: auto;
+            left: 76px;
             background-color: black;
             width: 200px; 
             height: 30px;
             border-radius: 0px 0px 20px 20px;
+
+            &--cam {
+                position: absolute;
+                bottom: 8px;
+                right: 30px;
+                width: 1rem;
+                height: 1rem;
+                border-radius: 50%;
+                border: .2rem solid #1e1f22;
+            }
+            &--speaker {
+                position: absolute;
+                top: 5px;
+                right: 3.9rem;
+                width: 5.2rem;
+                height: .6rem;
+                background: #1e1f22;
+                border-radius: .2rem;
+            }
         }
     }
 }
 
-/* ICON PHOTOS */

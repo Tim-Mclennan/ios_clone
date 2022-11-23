@@ -5,6 +5,10 @@
 These external properties are located within a seperate directory (scss-docs) and will be imported with the commands below: */
 /* GOOGLE FONT */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  font-family: Poppins;
+}
+
 .iphone {
   margin: auto;
   border: 10px solid black;
@@ -21,11 +25,12 @@ These external properties are located within a seperate directory (scss-docs) an
   border-radius: 30px;
 }
 .iphone__screen--bg {
-  background: url("images/background.jpg");
+  background: url("images/background3.jpg");
   background-size: cover;
+  background-position: center;
 }
 .iphone__screen__icons {
-  margin: 40px 25px;
+  margin: 60px 25px;
   display: grid;
   grid-template-columns: repeat(4, auto);
   row-gap: 60px;
@@ -39,75 +44,188 @@ These external properties are located within a seperate directory (scss-docs) an
   background: white;
   border-radius: 15px;
   cursor: pointer;
+  position: relative;
 }
 .iphone__screen__icons--app:nth-child(1) {
   background-image: url("images/Safari.JPG");
   background-size: cover;
   background-position: center;
 }
+.iphone__screen__icons--app:nth-child(1)::after {
+  content: "Safari";
+  color: white;
+  bottom: -20px;
+  left: 12px;
+  position: absolute;
+  font-size: 0.7rem;
+}
 .iphone__screen__icons--app:nth-child(2) {
   background-image: url("images/camera.JPG");
   background-size: cover;
   background-position: center;
+}
+.iphone__screen__icons--app:nth-child(2)::after {
+  content: "Camera";
+  color: white;
+  bottom: -20px;
+  left: 4px;
+  position: absolute;
+  font-size: 0.7rem;
 }
 .iphone__screen__icons--app:nth-child(3) {
   background-image: url("images/calendar.JPG");
   background-size: cover;
   background-position: center;
 }
+.iphone__screen__icons--app:nth-child(3)::after {
+  content: "Calendar";
+  color: white;
+  bottom: -20px;
+  left: 1px;
+  position: absolute;
+  font-size: 0.7rem;
+}
 .iphone__screen__icons--app:nth-child(4) {
-  background-image: url("images/clock.JPG");
+  background-image: url("images/clock.jpg");
   background-size: cover;
   background-position: center;
+}
+.iphone__screen__icons--app:nth-child(4)::after {
+  content: "Clock";
+  color: white;
+  bottom: -20px;
+  left: 12px;
+  position: absolute;
+  font-size: 0.7rem;
 }
 .iphone__screen__icons--app:nth-child(5) {
   background-image: url("images/contacts.JPG");
   background-size: cover;
   background-position: center;
 }
+.iphone__screen__icons--app:nth-child(5)::after {
+  content: "Contacts";
+  color: white;
+  bottom: -20px;
+  left: 2px;
+  position: absolute;
+  font-size: 0.7rem;
+}
 .iphone__screen__icons--app:nth-child(6) {
   background-image: url("images/discord.JPG");
   background-size: cover;
   background-position: center;
+}
+.iphone__screen__icons--app:nth-child(6)::after {
+  content: "Discord";
+  color: white;
+  bottom: -20px;
+  left: 8px;
+  position: absolute;
+  font-size: 0.7rem;
 }
 .iphone__screen__icons--app:nth-child(7) {
   background-image: url("images/google.JPG");
   background-size: cover;
   background-position: center;
 }
+.iphone__screen__icons--app:nth-child(7)::after {
+  content: "Google";
+  color: white;
+  bottom: -20px;
+  left: 6px;
+  position: absolute;
+  font-size: 0.7rem;
+}
 .iphone__screen__icons--app:nth-child(8) {
   background-image: url("images/instagram.JPG");
   background-size: cover;
   background-position: center;
+}
+.iphone__screen__icons--app:nth-child(8)::after {
+  content: "Instagram";
+  color: white;
+  bottom: -20px;
+  left: 0px;
+  position: absolute;
+  font-size: 0.7rem;
 }
 .iphone__screen__icons--app:nth-child(9) {
   background-image: url("images/messenger.JPG");
   background-size: cover;
   background-position: center;
 }
+.iphone__screen__icons--app:nth-child(9)::after {
+  content: "Messenger";
+  color: white;
+  bottom: -20px;
+  left: -5px;
+  position: absolute;
+  font-size: 0.7rem;
+}
 .iphone__screen__icons--app:nth-child(10) {
   background-image: url("images/notes.JPG");
   background-size: cover;
   background-position: center;
+}
+.iphone__screen__icons--app:nth-child(10)::after {
+  content: "Notes";
+  color: white;
+  bottom: -20px;
+  left: 10px;
+  position: absolute;
+  font-size: 0.7rem;
 }
 .iphone__screen__icons--app:nth-child(11) {
   background-image: url("images/reminder.JPG");
   background-size: cover;
   background-position: center;
 }
+.iphone__screen__icons--app:nth-child(11)::after {
+  content: "Reminders";
+  color: white;
+  bottom: -20px;
+  left: -2px;
+  position: absolute;
+  font-size: 0.7rem;
+}
 .iphone__screen__icons--app:nth-child(12) {
   background-image: url("images/slack.JPG");
   background-size: cover;
   background-position: center;
 }
+.iphone__screen__icons--app:nth-child(12)::after {
+  content: "Slack";
+  color: white;
+  bottom: -20px;
+  left: 14px;
+  position: absolute;
+  font-size: 0.7rem;
+}
 .iphone__screen--notch {
   position: absolute;
   top: 0;
-  left: 62px;
+  left: 76px;
   background-color: black;
   width: 200px;
   height: 30px;
   border-radius: 0px 0px 20px 20px;
 }
-
-/* ICON PHOTOS */
+.iphone__screen--notch--cam {
+  position: absolute;
+  bottom: 8px;
+  right: 30px;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  border: 0.2rem solid #1e1f22;
+}
+.iphone__screen--notch--speaker {
+  position: absolute;
+  top: 5px;
+  right: 3.9rem;
+  width: 5.2rem;
+  height: 0.6rem;
+  background: #1e1f22;
+  border-radius: 0.2rem;
+}
