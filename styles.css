@@ -17,12 +17,15 @@ These external properties are located within a seperate directory (scss-docs) an
   height: 700px;
   position: relative;
   box-shadow: 0px 20px 20px rgba(51, 51, 51, 0.2);
+  /* EXTERNAL BUTTONS */
 }
 .iphone__screen {
   position: absolute;
   width: 100%;
   height: 100%;
   border-radius: 30px;
+  overflow: hidden;
+  /* APPS  */
 }
 .iphone__screen--bg {
   background: url("images/background3.jpg");
@@ -37,7 +40,7 @@ These external properties are located within a seperate directory (scss-docs) an
   column-gap: 20px;
   align-content: center;
 }
-.iphone__screen__icons--app {
+.iphone__screen__icons--card {
   margin: auto;
   width: 60px;
   height: 60px;
@@ -46,12 +49,12 @@ These external properties are located within a seperate directory (scss-docs) an
   cursor: pointer;
   position: relative;
 }
-.iphone__screen__icons--app:nth-child(1) {
+.iphone__screen__icons--card:nth-child(1) {
   background-image: url("images/Safari.JPG");
   background-size: cover;
   background-position: center;
 }
-.iphone__screen__icons--app:nth-child(1)::after {
+.iphone__screen__icons--card:nth-child(1)::after {
   content: "Safari";
   color: white;
   bottom: -20px;
@@ -59,12 +62,12 @@ These external properties are located within a seperate directory (scss-docs) an
   position: absolute;
   font-size: 0.7rem;
 }
-.iphone__screen__icons--app:nth-child(2) {
+.iphone__screen__icons--card:nth-child(2) {
   background-image: url("images/camera.JPG");
   background-size: cover;
   background-position: center;
 }
-.iphone__screen__icons--app:nth-child(2)::after {
+.iphone__screen__icons--card:nth-child(2)::after {
   content: "Camera";
   color: white;
   bottom: -20px;
@@ -72,12 +75,12 @@ These external properties are located within a seperate directory (scss-docs) an
   position: absolute;
   font-size: 0.7rem;
 }
-.iphone__screen__icons--app:nth-child(3) {
+.iphone__screen__icons--card:nth-child(3) {
   background-image: url("images/calendar.JPG");
   background-size: cover;
   background-position: center;
 }
-.iphone__screen__icons--app:nth-child(3)::after {
+.iphone__screen__icons--card:nth-child(3)::after {
   content: "Calendar";
   color: white;
   bottom: -20px;
@@ -85,38 +88,38 @@ These external properties are located within a seperate directory (scss-docs) an
   position: absolute;
   font-size: 0.7rem;
 }
-.iphone__screen__icons--app:nth-child(4) {
+.iphone__screen__icons--card:nth-child(4) {
   background-image: url("images/clock.jpg");
   background-size: cover;
   background-position: center;
 }
-.iphone__screen__icons--app:nth-child(4)::after {
+.iphone__screen__icons--card:nth-child(4)::after {
   content: "Clock";
   color: white;
   bottom: -20px;
-  left: 12px;
+  left: 15px;
   position: absolute;
   font-size: 0.7rem;
 }
-.iphone__screen__icons--app:nth-child(5) {
+.iphone__screen__icons--card:nth-child(5) {
   background-image: url("images/contacts.JPG");
   background-size: cover;
   background-position: center;
 }
-.iphone__screen__icons--app:nth-child(5)::after {
+.iphone__screen__icons--card:nth-child(5)::after {
   content: "Contacts";
   color: white;
   bottom: -20px;
-  left: 2px;
+  left: 4px;
   position: absolute;
   font-size: 0.7rem;
 }
-.iphone__screen__icons--app:nth-child(6) {
+.iphone__screen__icons--card:nth-child(6) {
   background-image: url("images/discord.JPG");
   background-size: cover;
   background-position: center;
 }
-.iphone__screen__icons--app:nth-child(6)::after {
+.iphone__screen__icons--card:nth-child(6)::after {
   content: "Discord";
   color: white;
   bottom: -20px;
@@ -124,25 +127,25 @@ These external properties are located within a seperate directory (scss-docs) an
   position: absolute;
   font-size: 0.7rem;
 }
-.iphone__screen__icons--app:nth-child(7) {
+.iphone__screen__icons--card:nth-child(7) {
   background-image: url("images/google.JPG");
   background-size: cover;
   background-position: center;
 }
-.iphone__screen__icons--app:nth-child(7)::after {
+.iphone__screen__icons--card:nth-child(7)::after {
   content: "Google";
   color: white;
   bottom: -20px;
-  left: 6px;
+  left: 9px;
   position: absolute;
   font-size: 0.7rem;
 }
-.iphone__screen__icons--app:nth-child(8) {
+.iphone__screen__icons--card:nth-child(8) {
   background-image: url("images/instagram.JPG");
   background-size: cover;
   background-position: center;
 }
-.iphone__screen__icons--app:nth-child(8)::after {
+.iphone__screen__icons--card:nth-child(8)::after {
   content: "Instagram";
   color: white;
   bottom: -20px;
@@ -150,51 +153,51 @@ These external properties are located within a seperate directory (scss-docs) an
   position: absolute;
   font-size: 0.7rem;
 }
-.iphone__screen__icons--app:nth-child(9) {
+.iphone__screen__icons--card:nth-child(9) {
   background-image: url("images/messenger.JPG");
   background-size: cover;
   background-position: center;
 }
-.iphone__screen__icons--app:nth-child(9)::after {
+.iphone__screen__icons--card:nth-child(9)::after {
   content: "Messenger";
   color: white;
   bottom: -20px;
-  left: -5px;
+  left: 0px;
   position: absolute;
   font-size: 0.7rem;
 }
-.iphone__screen__icons--app:nth-child(10) {
+.iphone__screen__icons--card:nth-child(10) {
   background-image: url("images/notes.JPG");
   background-size: cover;
   background-position: center;
 }
-.iphone__screen__icons--app:nth-child(10)::after {
+.iphone__screen__icons--card:nth-child(10)::after {
   content: "Notes";
   color: white;
   bottom: -20px;
-  left: 10px;
+  left: 13px;
   position: absolute;
   font-size: 0.7rem;
 }
-.iphone__screen__icons--app:nth-child(11) {
+.iphone__screen__icons--card:nth-child(11) {
   background-image: url("images/reminder.JPG");
   background-size: cover;
   background-position: center;
 }
-.iphone__screen__icons--app:nth-child(11)::after {
+.iphone__screen__icons--card:nth-child(11)::after {
   content: "Reminders";
   color: white;
   bottom: -20px;
-  left: -2px;
+  left: 0px;
   position: absolute;
   font-size: 0.7rem;
 }
-.iphone__screen__icons--app:nth-child(12) {
+.iphone__screen__icons--card:nth-child(12) {
   background-image: url("images/slack.JPG");
   background-size: cover;
   background-position: center;
 }
-.iphone__screen__icons--app:nth-child(12)::after {
+.iphone__screen__icons--card:nth-child(12)::after {
   content: "Slack";
   color: white;
   bottom: -20px;
@@ -229,17 +232,57 @@ These external properties are located within a seperate directory (scss-docs) an
   background: #1e1f22;
   border-radius: 0.2rem;
 }
-.iphone__screen--volume {
+.iphone__screen--home {
+  position: absolute;
+  height: 10px;
+  width: 150px;
+  bottom: 10px;
+  left: 100px;
+  background-color: white;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 1px 1px 10px grey;
+  z-index: 100;
+}
+.iphone__screen--app {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  height: 700px;
+  transition: 0.5s;
+  top: -700px;
+}
+.iphone__screen--app--safari {
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+}
+.iphone__screen--app--camera {
+  background-color: black;
+}
+.iphone__volume {
   position: absolute;
   height: 50px;
   width: 5px;
   background-color: black;
 }
-.iphone__screen--volume--up {
+.iphone__volume--up {
   top: 100px;
   left: -13px;
 }
-.iphone__screen--volume--down {
+.iphone__volume--down {
   top: 170px;
   left: -13px;
+}
+.iphone__lock {
+  position: absolute;
+  height: 80px;
+  width: 5px;
+  background-color: black;
+  top: 120px;
+  right: -13px;
+}
+
+.open {
+  top: 1px;
 }

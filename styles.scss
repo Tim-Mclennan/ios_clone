@@ -22,6 +22,7 @@ These external properties are located within a seperate directory (scss-docs) an
     height: 700px;
     position: relative;
     box-shadow: 0px 20px 20px #33333333;
+    // overflow: hidden;
 
     &__screen {
         position: absolute;
@@ -29,6 +30,7 @@ These external properties are located within a seperate directory (scss-docs) an
         width: 100%;
         height: 100%;
         border-radius: 30px;
+        overflow: hidden;
 
         &--bg {
             background: url("images/background3.jpg");
@@ -43,7 +45,7 @@ These external properties are located within a seperate directory (scss-docs) an
             column-gap: 20px;
             align-content: center;
 
-            &--app {
+            &--card {
                 margin: auto;
                 // z-index: 15;
                 width: 60px;
@@ -100,7 +102,7 @@ These external properties are located within a seperate directory (scss-docs) an
                         content: "Clock";
                         color: white;
                         bottom: -20px;
-                        left: 12px;
+                        left: 15px;
                         position: absolute;
                         font-size: 0.7rem;
                     }
@@ -113,7 +115,7 @@ These external properties are located within a seperate directory (scss-docs) an
                         content: "Contacts";
                         color: white;
                         bottom: -20px;
-                        left: 2px;
+                        left: 4px;
                         position: absolute;
                         font-size: 0.7rem;
                     }
@@ -139,7 +141,7 @@ These external properties are located within a seperate directory (scss-docs) an
                         content: "Google";
                         color: white;
                         bottom: -20px;
-                        left: 6px;
+                        left: 9px;
                         position: absolute;
                         font-size: 0.7rem;
                     }
@@ -165,7 +167,7 @@ These external properties are located within a seperate directory (scss-docs) an
                         content: "Messenger";
                         color: white;
                         bottom: -20px;
-                        left: -5px;
+                        left: 0px;
                         position: absolute;
                         font-size: 0.7rem;
                     }
@@ -178,7 +180,7 @@ These external properties are located within a seperate directory (scss-docs) an
                         content: "Notes";
                         color: white;
                         bottom: -20px;
-                        left: 10px;
+                        left: 13px;
                         position: absolute;
                         font-size: 0.7rem;
                     }
@@ -191,7 +193,7 @@ These external properties are located within a seperate directory (scss-docs) an
                         content: "Reminders";
                         color: white;
                         bottom: -20px;
-                        left: -2px;
+                        left: 0px;
                         position: absolute;
                         font-size: 0.7rem;
                     }
@@ -240,22 +242,65 @@ These external properties are located within a seperate directory (scss-docs) an
                 border-radius: .2rem;
             }
         }
-
-        &--volume {
+        &--home {
             position: absolute;
-            height: 50px;
-            width: 5px;
-            background-color: black;
+            height: 10px;
+            width: 150px;
+            bottom: 10px;
+            left: 100px;
+            background-color: white;
+            border-radius: 25px;
+            cursor: pointer;
+            box-shadow: 1px 1px 10px grey;
+            z-index: 100;
+        }
 
-            &--up {
-                top: 100px;
-                left: -13px;
+        /* APPS  */
+        &--app {
+            position: absolute;
+            z-index: 10;
+            width: 100%;
+            height: 700px;
+            transition: 0.5s;
+            top: -700px; //or 1px to bring back in.
+
+            &--safari {
+                background-color: aliceblue;
+                display: flex;
+                flex-direction: column;
             }
-            &--down {
-                top: 170px;
-                left: -13px;
+            &--camera {
+                background-color: black;
             }
         }
     }
+
+    /* EXTERNAL BUTTONS */
+    &__volume {
+        position: absolute;
+        height: 50px;
+        width: 5px;
+        background-color: black;
+         &--up {
+            top: 100px;
+           left: -13px;
+        }
+        &--down {
+            top: 170px;
+            left: -13px;
+        }
+    }
+    &__lock {
+        position: absolute;
+        height: 80px;
+        width: 5px;
+        background-color: black;
+        top: 120px;
+        right:-13px;
+    }
+        
 }
 
+.open {
+    top: 1px;
+}
