@@ -1,4 +1,5 @@
-@import "documents/themes";
+/* colours */
+@import "scss-documents/themes";
 
 /* GOOGLE FONT */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
@@ -270,12 +271,79 @@ body {
             }
 
             &--camera {
-                background-color: black;
+                background-color: $app-dark-bg-colour;
+                display: flex;
+                flex-direction: column;
+
+                &--header {
+                    height: 100px;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+
+                    &--flash {
+                        margin: 35px 15px;
+                        
+                        &--icon {
+                            height: 20px;
+                            width: 20px;
+                            border-radius: 50%;
+                        }
+                    }
+                }
+                &--photo {
+                    width: auto;
+                    height: 470px;
+
+                    &--img {
+                        width: 100%;
+                        height: 100%;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-image: url("images/camera/shiba.JPG");
+                    }
+                }
+                &--footer {
+                    height: 150px;
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: row;
+                    align-items: flex-start;
+                    padding: 10px 10px;
+
+                    &--album {
+                        &--img {
+                            height: 45px;
+                            width: 45px;
+                            border-radius: 10px;
+                        }
+                    }
+                    &--btn {
+                        background-color: aliceblue;
+                        height: 60px;
+                        width: 60px;
+                        border-radius: 50%;
+                        box-shadow: 1px 1px grey;
+                        cursor: pointer;
+                    }
+                    &--swap {
+                        background-color: rgb(55, 55, 55);
+                        border-radius: 10px;
+                        border: 1px solid gold;
+                        cursor: pointer;
+
+                        &--img {
+                            height: 41px;
+                            width: 50px; 
+                            transform: scale(0.8,0.8);
+                        }
+                    }
+                }
             }
         }
 
         &__icons {
-            margin: 60px 25px;
+            margin: 60px 20px;
             display: grid;
             grid-template-columns: repeat(4, auto);
             row-gap: 60px;
@@ -438,7 +506,7 @@ body {
         }
         &--home {
             position: absolute;
-            height: 10px;
+            height: 7px;
             width: 150px;
             bottom: 10px;
             left: 95px;
@@ -479,6 +547,10 @@ body {
         
 }
 
+/* JAVASCRIPT CLASSES*/
 .open {
     top: 0px;
+}
+.cameraSwap {
+    background-image: url(images/camera/shiba2.JPG);
 }
