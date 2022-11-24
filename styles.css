@@ -1,12 +1,19 @@
-/* PREFACE - For this scss file, I have decided to use the BEM notation to structure my properties. BEM stands for 'Block__Element--Modifier'. Using BEM is an efficient way to change and edit CSS properties at a large scale.*/
-/* I have also included the use of external pre-set SCSS variables which contain properties such as colour themes and screen sizes. Using external SCSS files for preset variables is a great tool to use for larger, complex projects as it makes CSS more modular and easier to read.
-
-
-These external properties are located within a seperate directory (scss-docs) and will be imported with the commands below: */
+/* main */
+/* notch */
+/*settings*/
 /* GOOGLE FONT */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 * {
   font-family: Poppins;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .iphone {
@@ -25,12 +32,225 @@ These external properties are located within a seperate directory (scss-docs) an
   height: 100%;
   border-radius: 30px;
   overflow: hidden;
-  /* APPS  */
+  /* APPS */
 }
 .iphone__screen--bg {
   background: url("images/background3.jpg");
   background-size: cover;
   background-position: center;
+}
+.iphone__screen__app {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  height: 700px;
+  transition: 0.4s;
+  top: -1000px;
+}
+.iphone__screen__app--settings {
+  background-color: rgb(19, 19, 19);
+  display: flex;
+  flex-direction: column;
+  padding: 20px 15px;
+  color: white;
+}
+.iphone__screen__app--settings--h1 {
+  font-weight: 600;
+  font-size: 2.5rem;
+  margin-top: 30px;
+}
+.iphone__screen__app--settings--header {
+  max-width: 320px;
+  background-color: rgb(49, 49, 49);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 5px;
+  padding: 5px;
+  gap: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.iphone__screen__app--settings--header--img {
+  width: 60px;
+  height: 60px;
+}
+.iphone__screen__app--settings--header--para {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.iphone__screen__app--settings--vip {
+  margin-top: 20px;
+  max-width: 330px;
+  background-color: rgb(49, 49, 49);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-radius: 5px;
+  margin-top: 40px;
+}
+.iphone__screen__app--settings--vip--arpl {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0px 5px;
+}
+.iphone__screen__app--settings--vip--arpl--box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.iphone__screen__app--settings--vip--arpl--box--img {
+  width: 25px;
+  height: 25px;
+  border-radius: 5px;
+}
+.iphone__screen__app--settings--vip--arpl--box--para {
+  font-size: 0.9rem;
+}
+.iphone__screen__app--settings--vip--arpl--info {
+  height: 40px;
+}
+.iphone__screen__app--settings--vip--wifi {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5px 5px;
+  border-top: 0.1px solid rgb(124, 124, 124);
+  height: 40px;
+}
+.iphone__screen__app--settings--vip--wifi--box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.iphone__screen__app--settings--vip--wifi--box--img {
+  width: 25px;
+  height: 25px;
+  border-radius: 5px;
+}
+.iphone__screen__app--settings--vip--wifi--box--para {
+  font-size: 0.9rem;
+}
+.iphone__screen__app--settings--vip--wifi--info {
+  color: rgb(124, 124, 124);
+  padding-right: 5px;
+  font-size: 0.9rem;
+}
+.iphone__screen__app--settings--vip--blt {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5px 5px;
+  border-top: 0.1px solid rgb(124, 124, 124);
+  height: 40px;
+}
+.iphone__screen__app--settings--vip--blt--box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.iphone__screen__app--settings--vip--blt--box--img {
+  width: 25px;
+  height: 25px;
+  border-radius: 5px;
+}
+.iphone__screen__app--settings--vip--blt--box--para {
+  font-size: 0.9rem;
+}
+.iphone__screen__app--settings--vip--blt--info {
+  color: rgb(124, 124, 124);
+  padding-right: 5px;
+}
+.iphone__screen__app--settings--vip--mob {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5px 5px;
+  border-top: 0.1px solid rgb(124, 124, 124);
+  height: 40px;
+}
+.iphone__screen__app--settings--vip--mob--box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.iphone__screen__app--settings--vip--mob--box--img {
+  width: 25px;
+  height: 25px;
+  border-radius: 5px;
+}
+.iphone__screen__app--settings--vip--mob--box--para {
+  font-size: 0.9rem;
+}
+.iphone__screen__app--settings--vip--mob--info {
+  color: rgb(124, 124, 124);
+  padding-right: 5px;
+}
+.iphone__screen__app--settings--vip--htspt {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5px 5px;
+  border-top: 0.1px solid rgb(124, 124, 124);
+  height: 40px;
+}
+.iphone__screen__app--settings--vip--htspt--box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.iphone__screen__app--settings--vip--htspt--box--img {
+  width: 25px;
+  height: 25px;
+  border-radius: 5px;
+}
+.iphone__screen__app--settings--vip--htspt--box--para {
+  font-size: 0.9rem;
+}
+.iphone__screen__app--settings--vip--htspt--info {
+  color: rgb(124, 124, 124);
+  padding-right: 5px;
+}
+.iphone__screen__app--settings--vip--vpn {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0px 5px;
+  border-top: 0.1px solid rgb(124, 124, 124);
+}
+.iphone__screen__app--settings--vip--vpn--box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.iphone__screen__app--settings--vip--vpn--box--img {
+  width: 25px;
+  height: 25px;
+  border-radius: 5px;
+}
+.iphone__screen__app--settings--vip--vpn--box--para {
+  font-size: 0.9rem;
+}
+.iphone__screen__app--settings--vip--vpn--info {
+  color: rgb(124, 124, 124);
+  height: 40px;
+}
+.iphone__screen__app--camera {
+  background-color: black;
 }
 .iphone__screen__icons {
   margin: 60px 25px;
@@ -48,188 +268,146 @@ These external properties are located within a seperate directory (scss-docs) an
   border-radius: 15px;
   cursor: pointer;
   position: relative;
-}
-.iphone__screen__icons--card:nth-child(1) {
-  background-image: url("images/Safari.JPG");
+  color: white;
+  font-size: 0.7rem;
   background-size: cover;
   background-position: center;
 }
-.iphone__screen__icons--card:nth-child(1)::after {
-  content: "Safari";
-  color: white;
-  bottom: -20px;
-  left: 12px;
-  position: absolute;
-  font-size: 0.7rem;
+.iphone__screen__icons--card--settings {
+  background-image: url("images/settings.jpg");
 }
-.iphone__screen__icons--card:nth-child(2) {
+.iphone__screen__icons--card--settings::after {
+  content: "Settings";
+  bottom: -20px;
+  left: 7px;
+  position: absolute;
+}
+.iphone__screen__icons--card--camera {
   background-image: url("images/camera.JPG");
-  background-size: cover;
-  background-position: center;
 }
-.iphone__screen__icons--card:nth-child(2)::after {
+.iphone__screen__icons--card--camera::after {
   content: "Camera";
-  color: white;
   bottom: -20px;
-  left: 4px;
+  left: 6px;
   position: absolute;
-  font-size: 0.7rem;
 }
-.iphone__screen__icons--card:nth-child(3) {
+.iphone__screen__icons--card--calendar {
   background-image: url("images/calendar.JPG");
-  background-size: cover;
-  background-position: center;
 }
-.iphone__screen__icons--card:nth-child(3)::after {
+.iphone__screen__icons--card--calendar::after {
   content: "Calendar";
-  color: white;
-  bottom: -20px;
-  left: 1px;
-  position: absolute;
-  font-size: 0.7rem;
-}
-.iphone__screen__icons--card:nth-child(4) {
-  background-image: url("images/clock.jpg");
-  background-size: cover;
-  background-position: center;
-}
-.iphone__screen__icons--card:nth-child(4)::after {
-  content: "Clock";
-  color: white;
-  bottom: -20px;
-  left: 15px;
-  position: absolute;
-  font-size: 0.7rem;
-}
-.iphone__screen__icons--card:nth-child(5) {
-  background-image: url("images/contacts.JPG");
-  background-size: cover;
-  background-position: center;
-}
-.iphone__screen__icons--card:nth-child(5)::after {
-  content: "Contacts";
-  color: white;
   bottom: -20px;
   left: 4px;
   position: absolute;
-  font-size: 0.7rem;
 }
-.iphone__screen__icons--card:nth-child(6) {
+.iphone__screen__icons--card--clock {
+  background-image: url("images/clock.jpg");
+}
+.iphone__screen__icons--card--clock::after {
+  content: "Clock";
+  bottom: -20px;
+  left: 14px;
+  position: absolute;
+}
+.iphone__screen__icons--card--contacts {
+  background-image: url("images/contacts.JPG");
+}
+.iphone__screen__icons--card--contacts::after {
+  content: "Contacts";
+  bottom: -20px;
+  left: 4px;
+  position: absolute;
+}
+.iphone__screen__icons--card--discord {
   background-image: url("images/discord.JPG");
-  background-size: cover;
-  background-position: center;
 }
-.iphone__screen__icons--card:nth-child(6)::after {
+.iphone__screen__icons--card--discord::after {
   content: "Discord";
-  color: white;
   bottom: -20px;
   left: 8px;
   position: absolute;
-  font-size: 0.7rem;
 }
-.iphone__screen__icons--card:nth-child(7) {
+.iphone__screen__icons--card--google {
   background-image: url("images/google.JPG");
-  background-size: cover;
-  background-position: center;
 }
-.iphone__screen__icons--card:nth-child(7)::after {
+.iphone__screen__icons--card--google::after {
   content: "Google";
-  color: white;
   bottom: -20px;
   left: 9px;
   position: absolute;
-  font-size: 0.7rem;
 }
-.iphone__screen__icons--card:nth-child(8) {
+.iphone__screen__icons--card--instagram {
   background-image: url("images/instagram.JPG");
-  background-size: cover;
-  background-position: center;
 }
-.iphone__screen__icons--card:nth-child(8)::after {
+.iphone__screen__icons--card--instagram::after {
   content: "Instagram";
-  color: white;
   bottom: -20px;
   left: 0px;
   position: absolute;
-  font-size: 0.7rem;
 }
-.iphone__screen__icons--card:nth-child(9) {
+.iphone__screen__icons--card--messenger {
   background-image: url("images/messenger.JPG");
-  background-size: cover;
-  background-position: center;
 }
-.iphone__screen__icons--card:nth-child(9)::after {
+.iphone__screen__icons--card--messenger::after {
   content: "Messenger";
-  color: white;
   bottom: -20px;
   left: 0px;
   position: absolute;
-  font-size: 0.7rem;
 }
-.iphone__screen__icons--card:nth-child(10) {
+.iphone__screen__icons--card--notes {
   background-image: url("images/notes.JPG");
-  background-size: cover;
-  background-position: center;
 }
-.iphone__screen__icons--card:nth-child(10)::after {
+.iphone__screen__icons--card--notes::after {
   content: "Notes";
-  color: white;
-  bottom: -20px;
-  left: 13px;
-  position: absolute;
-  font-size: 0.7rem;
-}
-.iphone__screen__icons--card:nth-child(11) {
-  background-image: url("images/reminder.JPG");
-  background-size: cover;
-  background-position: center;
-}
-.iphone__screen__icons--card:nth-child(11)::after {
-  content: "Reminders";
-  color: white;
-  bottom: -20px;
-  left: 0px;
-  position: absolute;
-  font-size: 0.7rem;
-}
-.iphone__screen__icons--card:nth-child(12) {
-  background-image: url("images/slack.JPG");
-  background-size: cover;
-  background-position: center;
-}
-.iphone__screen__icons--card:nth-child(12)::after {
-  content: "Slack";
   color: white;
   bottom: -20px;
   left: 14px;
   position: absolute;
-  font-size: 0.7rem;
+}
+.iphone__screen__icons--card--phone {
+  background-image: url("images/phone.JPG");
+}
+.iphone__screen__icons--card--phone::after {
+  content: "Phone";
+  bottom: -20px;
+  left: 12px;
+  position: absolute;
+}
+.iphone__screen__icons--card--messages {
+  background-image: url("images/messages.JPG");
+}
+.iphone__screen__icons--card--messages::after {
+  content: "Messages";
+  bottom: -20px;
+  left: 3px;
+  position: absolute;
 }
 .iphone__screen--notch {
   position: absolute;
   top: 0;
-  left: 76px;
+  left: 70px;
   background-color: black;
   width: 200px;
   height: 30px;
   border-radius: 0px 0px 20px 20px;
+  z-index: 100;
 }
 .iphone__screen--notch--cam {
   position: absolute;
   bottom: 8px;
   right: 30px;
-  width: 1rem;
-  height: 1rem;
+  width: 0.8rem;
+  height: 0.8rem;
   border-radius: 50%;
-  border: 0.2rem solid #1e1f22;
+  border: 0.2rem solid rgb(31, 31, 31);
 }
 .iphone__screen--notch--speaker {
   position: absolute;
   top: 5px;
   right: 3.9rem;
   width: 5.2rem;
-  height: 0.6rem;
-  background: #1e1f22;
+  height: 0.5rem;
+  background: rgb(31, 31, 31);
   border-radius: 0.2rem;
 }
 .iphone__screen--home {
@@ -237,42 +415,26 @@ These external properties are located within a seperate directory (scss-docs) an
   height: 10px;
   width: 150px;
   bottom: 10px;
-  left: 100px;
+  left: 95px;
   background-color: white;
   border-radius: 25px;
   cursor: pointer;
-  box-shadow: 1px 1px 10px grey;
+  box-shadow: 1px 1px 5px grey;
   z-index: 100;
-}
-.iphone__screen--app {
-  position: absolute;
-  z-index: 10;
-  width: 100%;
-  height: 700px;
-  transition: 0.5s;
-  top: -700px;
-}
-.iphone__screen--app--safari {
-  background-color: aliceblue;
-  display: flex;
-  flex-direction: column;
-}
-.iphone__screen--app--camera {
-  background-color: black;
 }
 .iphone__volume {
   position: absolute;
   height: 50px;
   width: 5px;
   background-color: black;
+  border-radius: 5px;
+  left: -13px;
 }
 .iphone__volume--up {
   top: 100px;
-  left: -13px;
 }
 .iphone__volume--down {
   top: 170px;
-  left: -13px;
 }
 .iphone__lock {
   position: absolute;
@@ -281,8 +443,9 @@ These external properties are located within a seperate directory (scss-docs) an
   background-color: black;
   top: 120px;
   right: -13px;
+  border-radius: 10px;
 }
 
 .open {
-  top: 1px;
+  top: 0px;
 }
