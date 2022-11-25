@@ -278,6 +278,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url("images/camera/shiba.JPG");
+  background-position: center;
 }
 .iphone__screen__app--camera--footer {
   height: 150px;
