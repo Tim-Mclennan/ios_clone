@@ -37,9 +37,9 @@ I have also included the use of external pre-set SCSS variables which contain pr
 
 I learnt many skills whilst building this project, predominantly frontend. This project gave me a solid understanding of Document Object Manipulation, and how it can be utilised to make efficient and beautiful applications/websites. 
 
-Another concept that I found intriguing from this project was the use of the 'absolute' and 'relative' values of the 'position' property. More specifically, I learnt (the hard way) that an element with the position:absolute property will always use its closest nested ancestor with a position:relative as a refernece regarding where it should be positioned. 
+Another concept that I found intriguing from this project was the use of the 'absolute' and 'relative' values of the 'position' property. More specifically, I learnt (the hard way) that an element with the position:absolute property will always use its closest nested ancestor with a position:relative as a reference, regarding where it should be positioned. 
 
-I thought this to be powerful as I suddenly found myself positioning nearly all of the elements quite easily when used in conjuntion with grid and flexbox.
+I thought this was powerful as I suddenly found myself positioning all of the elements quite easily when using 'position' in conjunction with grid and flexbox.
 
 - **What challenges did you face and how did you overcome them?**
 
