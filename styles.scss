@@ -523,9 +523,20 @@ body {
             z-index: 100;
         }
 
+        &__time {
+            position: absolute;
+            top: 5px;
+            left: 22px;
+
+            &--display {
+                font-size: 1rem;
+                font-weight: 600;
+                color: white;
+            }
+        }
     }
 
-    /* EXTERNAL BUTTONS */
+    /* EXTERNAL PHONE BUTTONS */
     &__volume {
         position: absolute;
         height: 50px;
