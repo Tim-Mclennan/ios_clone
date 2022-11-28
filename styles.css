@@ -288,10 +288,14 @@ body {
   align-items: flex-start;
   padding: 10px 10px;
 }
-.iphone__screen__app--camera--footer--album--img {
+.iphone__screen__app--camera--footer--album {
+  cursor: pointer;
+  background-image: url("images/camera/shiba1.JPG");
   height: 45px;
   width: 45px;
   border-radius: 10px;
+  background-position: center;
+  background-size: cover;
 }
 .iphone__screen__app--camera--footer--btn {
   background-color: aliceblue;
@@ -513,4 +517,12 @@ body {
 
 .cameraSwap {
   background-image: url(images/camera/shiba2.JPG);
+}
+
+.albumSwap {
+  background-image: url(images/camera/shiba1.JPG);
+}
+
+.albumSwapBack {
+  background-image: url(images/camera/shiba.JPG);
 }

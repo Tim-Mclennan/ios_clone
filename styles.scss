@@ -313,10 +313,15 @@ body {
                     padding: 10px 10px;
 
                     &--album {
+                        cursor: pointer;
+                        background-image: url("images/camera/shiba1.JPG");
+                        height: 45px;
+                        width: 45px;
+                        border-radius: 10px;
+                        background-position: center;
+                        background-size: cover;
+
                         &--img {
-                            height: 45px;
-                            width: 45px;
-                            border-radius: 10px;
                         }
                     }
                     &--btn {
@@ -554,4 +559,10 @@ body {
 }
 .cameraSwap {
     background-image: url(images/camera/shiba2.JPG);
+}
+.albumSwap {
+    background-image: url(images/camera/shiba1.JPG);
+}
+.albumSwapBack {
+    background-image: url(images/camera/shiba.JPG);
 }

@@ -18,23 +18,22 @@ The languages and techniques I have used in this project include:
 - SCSS
 - Javascript
 
-For this particular project, I have decided to use the BEM notation to structure my properties. BEM stands for 'Block__Element--Modifier'. Using BEM is an efficient way to change and edit CSS properties at a large scale.
+For this particular project, I have decided to use the BEM notation to structure my properties. BEM stands for 'Block__Element--Modifier'. Using BEM is an efficient way to change and edit CSS properties - especially on a larger, complex scale.
 
 
-I have also included the use of external pre-set SCSS variables which contain properties. Using external SCSS files for preset variables is a great tool to use for larger, complex projects as it makes CSS more modular and easier to read. These external properties are located within a seperate directory (scss-docs) and will be imported with the '@import' command.
+I have also included the use of external pre-set SCSS variables which contain properties, such as themes. Using external SCSS files for preset variables is another great tool to use for larger projects as it makes CSS more modular, easier to edit and read. These external properties are located within a seperate directory (scss-documents) and will be imported with the '@import' command.
 
 
 ## Features
 
-- Light/dark mode toggle
-- Home Button
-- Modular Apps
+- Functional Home Button
+- Settings, Camera and contact apps (Other apps in progress of development)
 - Cross platform
 
 
 ## Lessons Learned
 
-- What did you learn while building this project?
+- **What did you learn while building this project?**
 
 I learnt many skills whilst building this project, predominantly frontend. This project gave me a solid understanding of Document Object Manipulation, and how it can be utilised to make efficient and beautiful applications/websites. 
 
@@ -42,19 +41,22 @@ Another concept that I found intriguing from this project was the use of the 'ab
 
 I thought this to be powerful as I suddenly found myself positioning nearly all of the elements quite easily when used in conjuntion with grid and flexbox.
 
-- What challenges did you face and how did you overcome them?
+- **What challenges did you face and how did you overcome them?**
 
-One of the biggest challenges I faced in this project, was trying to implement 'mobile apps' as they would appear on an actual iphone. In particular, I wanted all the apps to be able to slide down the screen when called upon, and to subsequently slide back up whenever the home screen was clicked. Although the 'modal' element seems like an easy solution to this, I wasn't able to truly harness the visual affect of a vertically sliding box with this technique. 
+One of the biggest challenges I faced in this project, was trying to implement the mobile 'apps' as they would appear on an actual iphone. 
 
-To solve this challenge, I decided to be innovative and utilise the 'position' and 'top' properties. To summarise this approach, I gave a default property of 'top: -700px' to each app, which basically meant that the div for each app would be sitting outside of the screen unseen. 
+In particular, I wanted all the apps to be able to slide down the screen when called upon, and to subsequently slide back up whenever the home screen was clicked. Although the 'modal' element seems like an easy solution to this, I wasn't able to truly harness the visual affect of a vertically sliding box with this technique. Another potential solution was to simply use the 'display: none' property, however this would simply pop the app into existence without any real way to ease it onto the screen.
 
-By utilising Javascript's 'addEventListener' method, I added another class '.open' which would then give the apps a new top property of 0. This would then force the app back into view, and also allow me to use the 'transition' property to make it seem abit more natural and cohesive.
+Instead - to overcome this challenge - I decided to be innovative and utilise the 'position' and 'top' properties. To summarise this approach, I gave a default property of 'top: -700px' to each app, which basically meant that the div for each app would be sitting outside of the screen unseen. 
+
+By utilising Javascript's 'addEventListener' method, I added another class '.open' which would then give the apps a new top property of 0. This would force the app back into view. Furthermore, this allowed me to also use the 'transition: 0.4s' property to make it seem abit more natural and cohesive.
 
 
 ## Acknowledgements
 
  - [BEM Notation](https://getbem.com/introduction/)
  - [SCSS Basics](https://sass-lang.com/guide)
+ - [Difference between css position absolute versus relative](https://leannezhang.medium.com/difference-between-css-position-absolute-versus-relative-35f064384c6)
 
 
 ## 🔗 Links
