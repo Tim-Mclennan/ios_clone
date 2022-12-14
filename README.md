@@ -10,6 +10,8 @@ I love solving problems and continuously teaching myself new concepts. I have gr
 
 # IOS Clone
 
+![image](https://user-images.githubusercontent.com/102727510/207587973-22808276-b592-40ef-9276-8f80360f7faa.png)
+
 The objective of creating this Iphone clone is to showcase the skills I have learnt while attending Nology's software engineering program. 
 
 The languages and techniques I have used in this project include:
