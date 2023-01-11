@@ -338,7 +338,7 @@ body {
   background-position: center;
 }
 .iphone__screen__icons--card--settings {
-  background-image: url("images/settings.jpg");
+  background-image: url("images/settings.JPG");
 }
 .iphone__screen__icons--card--settings::after {
   content: "Settings";
@@ -365,7 +365,7 @@ body {
   position: absolute;
 }
 .iphone__screen__icons--card--clock {
-  background-image: url("images/clock.jpg");
+  background-image: url("images/clock.JPG");
 }
 .iphone__screen__icons--card--clock::after {
   content: "Clock";
