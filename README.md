@@ -3,14 +3,16 @@
 
 
 ## 🚀 About Me
-I'm a software engineer that is currently learning full stack development with a focus on the frontend. 
+I'm a web developer.
 
 I love solving problems and continuously teaching myself new concepts. I have great interpersonal skills and i'm ready to apply myself technically to become a well rounded professional.
 
 
 # IOS Clone
 
-The objective of creating this Iphone clone is to showcase the skills I have learnt while attending Nology's software engineering program. 
+![image](https://user-images.githubusercontent.com/102727510/211922950-77caaa88-7db5-4de1-a981-db6e79dddfc2.png)
+
+The objective of creating this Iphone clone is to showcase some of my frontend skills that dont include any JS frameworks. 
 
 The languages and techniques I have used in this project include:
 - HTML
@@ -18,18 +20,19 @@ The languages and techniques I have used in this project include:
 - SCSS
 - Javascript
 
-For this particular project, I have decided to use the BEM notation to structure my properties. BEM stands for 'Block__Element--Modifier'. Using BEM is an efficient way to change and edit CSS properties - especially on a larger, complex scale.
 
-
-I have also included the use of external pre-set SCSS variables which contain properties, such as themes. Using external SCSS files for preset variables is another great tool to use for larger projects as it makes CSS more modular, easier to edit and read. These external properties are located within a seperate directory (scss-documents) and will be imported with the '@import' command.
-
-
-## Features
+## User Features
 
 - Functional Home Button
 - Settings, Camera and contact apps (Other apps in progress of development)
 - Cross platform
 
+
+## Technical Features
+For this particular project, I have decided to use the BEM notation to structure my properties. BEM stands for 'Block__Element--Modifier'. Using BEM is an efficient way to change and edit CSS properties - especially on a larger, complex scale.
+
+
+I have also included the use of external pre-set SCSS variables which contain properties, such as themes. Using external SCSS files for preset variables is another great tool to use for larger projects as it makes CSS more modular, easier to edit and read. These external properties are located within a seperate directory (scss-documents) and will be imported with the '@import' command.
 
 ## Lessons Learned
 
