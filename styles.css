@@ -17,7 +17,7 @@ body {
 }
 
 .iphone {
-  margin: auto;
+  margin: 20px auto;
   border: 10px solid black;
   border-radius: 40px;
   width: 360px;
